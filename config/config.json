@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "secret",
-    "database": "pick-the-pick_development",
+    "database": "clickthepic_development",
     "host": "localhost",
     "dialect": "postgres",
     "operatorsAliases": false
