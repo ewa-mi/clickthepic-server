@@ -3,8 +3,11 @@ const app = express();
 const bodyParserMiddleWare = express.json();
 const { PORT } = require("./config/constants");
 const cors = require("cors");
+const loggerMiddleWare = require("morgan");
+const authRouter = require("./routers/auth");
 
 app.use(bodyParserMiddleWare);
+app.use(loggerMiddleWare("dev"));
 app.use(cors());
 
 if (process.env.DELAY) {
@@ -12,5 +15,7 @@ if (process.env.DELAY) {
     setTimeout(() => next(), parseInt(process.env.DELAY));
   });
 }
+
+app.use("/", authRouter);
 
 app.listen(PORT, console.log(`server running on ${PORT}`));
