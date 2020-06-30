@@ -3,12 +3,14 @@ const Card = require("../models").card;
 
 const router = new Router();
 
-router.get("/", async (req, res) => {
+router.post("/", async (req, res) => {
+  const { language, category } = req.body;
+
   try {
     const cards = await Card.findAll({
       where: {
         language: language,
-        category: category,
+        category: category.toLowerCase(),
       },
     });
 

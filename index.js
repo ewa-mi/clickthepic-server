@@ -18,6 +18,6 @@ if (process.env.DELAY) {
 }
 
 app.use("/", authRouter);
-app.use("/", cardRouter);
+app.use("/card", cardRouter);
 
 app.listen(PORT, console.log(`server running on ${PORT}`));
