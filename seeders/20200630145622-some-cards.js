@@ -186,7 +186,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          word: "a traveling / sightseeing / to travel",
+          word: "a traveling, sightseeing, to travel",
           language: "en",
           category: "activities",
           image:
@@ -195,7 +195,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          word: "en voyageant / un tourisme / voyager",
+          word: "en voyageant, un tourisme, voyager",
           language: "fr",
           category: "activities",
           image:
@@ -204,7 +204,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          word: "eine Reise / eine Besichtigung / besuchen",
+          word: "eine Reise, eine Besichtigung, besuchen",
           language: "de",
           category: "activities",
           image:
@@ -213,7 +213,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          word: "un viaje / un turismo / viajar",
+          word: "un viaje, un turismo, viajar",
           language: "es",
           category: "activities",
           image:
@@ -222,7 +222,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          word: "a room / /a flat / a home",
+          word: "a room, a flat, a home",
           language: "en",
           category: "places",
           image:
@@ -231,7 +231,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          word: "ein Zimmer / eine Wohnung / ein Haus",
+          word: "ein Zimmer, eine Wohnung, ein Haus",
           language: "de",
           category: "places",
           image:
@@ -240,7 +240,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          word: "une chambre / un appartement / une maison",
+          word: "une chambre, un appartement, une maison",
           language: "fr",
           category: "places",
           image:
@@ -249,7 +249,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          word: "una habitación / un apartamento / una casa ",
+          word: "una habitación, un apartamento, una casa ",
           language: "es",
           category: "places",
           image:
