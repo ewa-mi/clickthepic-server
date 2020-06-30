@@ -5,6 +5,7 @@ const { PORT } = require("./config/constants");
 const cors = require("cors");
 const loggerMiddleWare = require("morgan");
 const authRouter = require("./routers/auth");
+const cardRouter = require("./routers/card");
 
 app.use(bodyParserMiddleWare);
 app.use(loggerMiddleWare("dev"));
@@ -17,5 +18,6 @@ if (process.env.DELAY) {
 }
 
 app.use("/", authRouter);
+app.use("/", cardRouter);
 
 app.listen(PORT, console.log(`server running on ${PORT}`));
