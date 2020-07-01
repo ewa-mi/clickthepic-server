@@ -4,6 +4,7 @@ const { toJWT } = require("../auth/jwt");
 const { SALT_ROUNDS } = require("../config/constants");
 const authMiddleware = require("../auth/middleware");
 const User = require("../models/").user;
+const scorelist = require('../models').scoreList;
 
 const router = new Router();
 
