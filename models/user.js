@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   user.associate = function (models) {
-    //here
+    user.hasOne(models.scoreList)
   };
   return user;
 };
