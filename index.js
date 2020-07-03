@@ -6,11 +6,11 @@ const cors = require("cors");
 const loggerMiddleWare = require("morgan");
 const authRouter = require("./routers/auth");
 const cardRouter = require("./routers/card");
-const scoresRouter = require('./routers/scores');
+const scoresRouter = require("./routers/scores");
 
+app.use(cors());
 app.use(bodyParserMiddleWare);
 app.use(loggerMiddleWare("dev"));
-app.use(cors());
 
 if (process.env.DELAY) {
   app.use((req, res, next) => {
@@ -20,6 +20,6 @@ if (process.env.DELAY) {
 
 app.use("/", authRouter);
 app.use("/card", cardRouter);
-app.use('/scores', scoresRouter);
+app.use("/scores", scoresRouter);
 
 app.listen(PORT, console.log(`server running on ${PORT}`));
